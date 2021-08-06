@@ -33,7 +33,7 @@ public class GetNodeData implements Watcher {
 
     /**
      * 回调方法：处理来自服务器端的watch通知
-     *  sesion建立后，zookeeper服务端会向客户端发送事件通知
+     *  session建立后，zookeeper服务端会向客户端发送事件通知
      * @param watchedEvent
      */
     @Override

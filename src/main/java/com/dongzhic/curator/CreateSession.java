@@ -15,10 +15,10 @@ public class CreateSession {
     public static void main(String[] args) {
 
         String connectString = "127.0.0.1:2181";
-
-        // 1.不使用fluent编程风格
         // 失败策略
         RetryPolicy exponentialBackoffRetry = new ExponentialBackoffRetry(1000, 3);
+
+        // 1.不使用fluent编程风格
         CuratorFramework curatorFramework = CuratorFrameworkFactory.newClient(connectString, exponentialBackoffRetry);
         curatorFramework.start();
         System.out.println("会话被建立了");

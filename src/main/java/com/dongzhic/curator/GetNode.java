@@ -37,8 +37,6 @@ public class GetNode {
                 .forPath(path, "init".getBytes());
         System.out.println("节点递归创建成功，该节点路径为：" + s);
 
-        //获取节点的数据内容及状态信息
-
         // 数据内容
         byte[] data = client.getData().forPath(path);
         System.out.println("获取到的节点数据内容" + new String(data));

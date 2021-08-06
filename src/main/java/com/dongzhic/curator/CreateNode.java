@@ -33,7 +33,7 @@ public class CreateNode {
         String path = "/curator/c1";
         String s = client.create().creatingParentsIfNeeded()
                 .withMode(CreateMode.PERSISTENT)
-                .forPath(path, "init".getBytes());
+                .forPath(path, "数据内容：init".getBytes());
         System.out.println("节点递归创建成功，该节点路径为：" + s);
 
     }
